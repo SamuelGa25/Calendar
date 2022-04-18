@@ -2,15 +2,17 @@ $(document).ready(function(){
 
     let timeEl = $('<p>');
     let dayEl = $('<p>');
-    let box1 = $('#div9');
-    let box2 = $('#div10');
-    let box3 = $('#div11');
-    let box4 = $('#div12');
-    let box5 = $('#div1');
-    let box9 = $('#div2');
-    let box10 = $('#div3');
-    let box11 = $('#div4');
-    let box12 = $('#div5');
+
+    let box1 = $('#div1');
+    let box2 = $('#div2');
+    let box3 = $('#div3');
+    let box4 = $('#div4');
+    let box5 = $('#div5');
+
+    let box9 = $('#div9');
+    let box10 = $('#div10');
+    let box11 = $('#div11');
+    let box12 = $('#div12');
 
     box1.val(localStorage.getItem('Entry1'));
     box2.val(localStorage.getItem('Entry2'));
@@ -183,12 +185,15 @@ $(document).ready(function(){
         event.preventDefault();
         if(box9.val() !==''){
             localStorage.setItem('Entry9', box9.val());
+             console.log("saved 9");
         }
+       
     });
     button10.on('click', function(){
         event.preventDefault();
         if(box11.val() !==''){
             localStorage.setItem('Entry10', box10.val());
+            console.log("saved 10");
         }
 
     });
@@ -196,6 +201,7 @@ $(document).ready(function(){
         event.preventDefault();
         if(box11.val() !==''){
             localStorage.setItem('Entry11', box11.val());
+            console.log("saved 11");
         }
 
     });
@@ -203,6 +209,7 @@ $(document).ready(function(){
         event.preventDefault();
         if(box12.val() !==''){
             localStorage.setItem('Entry12', box12.val());
+            console.log("saved 12");
         }
 
     });
@@ -210,6 +217,7 @@ $(document).ready(function(){
         event.preventDefault();
         if(box1.val() !==''){
             localStorage.setItem('Entry1', box1.val());
+            console.log("saved 1");
         }
 
     });
@@ -217,6 +225,7 @@ $(document).ready(function(){
         event.preventDefault();
         if(box2.val() !==''){
             localStorage.setItem('Entry2', box2.val());
+            console.log("saved 2");
         }
 
     });
@@ -224,6 +233,7 @@ $(document).ready(function(){
         event.preventDefault();
         if(box3.val() !==''){
             localStorage.setItem('Entry3', box3.val());
+            console.log("saved 3");
         }
 
     });
@@ -231,6 +241,7 @@ $(document).ready(function(){
         event.preventDefault();
         if(box4.val() !==''){
             localStorage.setItem('Entry4', box4.val());
+            console.log("saved 4");
         }
 
     });
@@ -238,6 +249,7 @@ $(document).ready(function(){
         event.preventDefault();
         if(box5.val() !==''){
             localStorage.setItem('Entry5', box9.val());
+            console.log("saved 5");
         }
 
     });
